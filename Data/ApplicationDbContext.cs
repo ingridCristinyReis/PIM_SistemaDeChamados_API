@@ -16,7 +16,7 @@ namespace PIM_SistemaDeChamados_API.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=SistemaDeChamados;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("Server=tcp:servidor-pim2025-ingrid.database.windows.net,1433;Initial Catalog=SistemaDeChamados;Persist Security Info=False;User ID=adminpim;Password=Pim2025@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 

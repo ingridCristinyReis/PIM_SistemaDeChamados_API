@@ -46,13 +46,29 @@ namespace PIM_SistemaDeChamados_API.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Tecnicos",
+                columns: table => new
+                {
+                    IdTecnico = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Especialidade = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IdFunc = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Tecnicos", x => x.IdTecnico);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Triagens",
                 columns: table => new
                 {
                     IdTriagem = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Prioridade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Prioridade = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -65,42 +81,18 @@ namespace PIM_SistemaDeChamados_API.Migrations
                 {
                     IdFunc = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NomeUsuario = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NomeUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    Funcao = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Departamento = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Funcao = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Setor = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Matricula = table.Column<string>(type: "nvarchar(6)", maxLength: 6, nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Usuarios", x => x.IdFunc);
                 });
-
-            migrationBuilder.CreateTable(
-                name: "Tecnicos",
-                columns: table => new
-                {
-                    IdTecnico = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Especialidade = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Disponibilidade = table.Column<bool>(type: "bit", nullable: false),
-                    IdFunc = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Tecnicos", x => x.IdTecnico);
-                    table.ForeignKey(
-                        name: "FK_Tecnicos_Usuarios_IdFunc",
-                        column: x => x.IdFunc,
-                        principalTable: "Usuarios",
-                        principalColumn: "IdFunc",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tecnicos_IdFunc",
-                table: "Tecnicos",
-                column: "IdFunc");
         }
 
         /// <inheritdoc />

@@ -12,8 +12,8 @@ using PIM_SistemaDeChamados_API.Data;
 namespace PIM_SistemaDeChamados_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251028045047_RecriarBancoLocalDB")]
-    partial class RecriarBancoLocalDB
+    [Migration("20251102235152_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -99,8 +99,9 @@ namespace PIM_SistemaDeChamados_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTecnico"));
 
-                    b.Property<bool>("Disponibilidade")
-                        .HasColumnType("bit");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Especialidade")
                         .IsRequired()
@@ -109,9 +110,11 @@ namespace PIM_SistemaDeChamados_API.Migrations
                     b.Property<int>("IdFunc")
                         .HasColumnType("int");
 
-                    b.HasKey("IdTecnico");
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("IdFunc");
+                    b.HasKey("IdTecnico");
 
                     b.ToTable("Tecnicos");
                 });
@@ -126,11 +129,13 @@ namespace PIM_SistemaDeChamados_API.Migrations
 
                     b.Property<string>("Prioridade")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("IdTriagem");
 
@@ -145,42 +150,38 @@ namespace PIM_SistemaDeChamados_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFunc"));
 
-                    b.Property<string>("Departamento")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Funcao")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Matricula")
+                        .IsRequired()
+                        .HasMaxLength(6)
+                        .HasColumnType("nvarchar(6)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeUsuario")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Setor")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdFunc");
 
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("PIM_SistemaDeChamados_API.Models.Tecnico", b =>
-                {
-                    b.HasOne("PIM_SistemaDeChamados_API.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("IdFunc")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
                 });
 #pragma warning restore 612, 618
         }
