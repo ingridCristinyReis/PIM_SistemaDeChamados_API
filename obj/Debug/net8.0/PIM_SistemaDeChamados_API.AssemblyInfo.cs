@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PIM_SistemaDeChamados_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37aad8c6b11b5bdaadfa895e0eba03a651ed92b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cca66cc00dc5fb788c605d8a835ed02c2076139")]
 [assembly: System.Reflection.AssemblyProductAttribute("PIM_SistemaDeChamados_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PIM_SistemaDeChamados_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
