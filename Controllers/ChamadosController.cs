@@ -51,11 +51,22 @@ namespace PIM_SistemaDeChamados_API.Controllers
         public async Task<IActionResult> PutChamado(int id, Chamado chamado)
         {
             if (id != chamado.IdChamado)
-            {
                 return BadRequest();
-            }
 
-            _context.Entry(chamado).State = EntityState.Modified;
+            var chamadoExistente = await _context.Chamados.FindAsync(id);
+            if (chamadoExistente == null)
+                return NotFound();
+
+            // Atualiza os campos
+            chamadoExistente.Titulo = chamado.Titulo;
+            chamadoExistente.Descricao = chamado.Descricao;
+            chamadoExistente.Prioridade = chamado.Prioridade;
+            chamadoExistente.Status = chamado.Status;
+            chamadoExistente.Resolucao = chamado.Resolucao;
+
+            // Se o técnico marcar como fechado ou concluído
+            if (chamado.Status == "Fechado" || chamado.Status == "Concluído")
+                chamadoExistente.DataFechamento = DateTime.Now;
 
             try
             {
@@ -64,17 +75,14 @@ namespace PIM_SistemaDeChamados_API.Controllers
             catch (DbUpdateConcurrencyException)
             {
                 if (!ChamadoExists(id))
-                {
                     return NotFound();
-                }
                 else
-                {
                     throw;
-                }
             }
 
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteChamado(int id)

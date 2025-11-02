@@ -2,13 +2,17 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PIM_SistemaDeChamados_API.Models
 {
-    public class Triagem // Cria a classe
+    public class Triagem
     {
-        [Key] //Para mostrar que IdFun é a chave primária
+        [Key]
         public int IdTriagem { get; set; }
 
-         //Cria as propriedades para as colunas, conforme o SQL
-        public required string Prioridade { get; set; }
-        public required string Status { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string Prioridade { get; set; } = "Média";
+
+        [Required]
+        [MaxLength(50)]
+        public string Status { get; set; } = "Aberto";
     }
 }

@@ -40,12 +40,52 @@ namespace PIM_SistemaDeChamados_API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Prioridade")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Resolucao")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.HasKey("IdChamado");
 
                     b.ToTable("Chamados");
+                });
+
+            modelBuilder.Entity("PIM_SistemaDeChamados_API.Models.Log", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Acao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DataHora")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Usuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Logs");
                 });
 
             modelBuilder.Entity("PIM_SistemaDeChamados_API.Models.Tecnico", b =>
@@ -56,8 +96,9 @@ namespace PIM_SistemaDeChamados_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTecnico"));
 
-                    b.Property<bool>("Disponibilidade")
-                        .HasColumnType("bit");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Especialidade")
                         .IsRequired()
@@ -66,9 +107,11 @@ namespace PIM_SistemaDeChamados_API.Migrations
                     b.Property<int>("IdFunc")
                         .HasColumnType("int");
 
-                    b.HasKey("IdTecnico");
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("IdFunc");
+                    b.HasKey("IdTecnico");
 
                     b.ToTable("Tecnicos");
                 });
@@ -83,11 +126,13 @@ namespace PIM_SistemaDeChamados_API.Migrations
 
                     b.Property<string>("Prioridade")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("IdTriagem");
 
@@ -102,11 +147,28 @@ namespace PIM_SistemaDeChamados_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFunc"));
 
-                    b.Property<string>("Matricula")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Funcao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Matricula")
+                        .IsRequired()
+                        .HasMaxLength(6)
+                        .HasColumnType("nvarchar(6)");
+
                     b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomeUsuario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -117,17 +179,6 @@ namespace PIM_SistemaDeChamados_API.Migrations
                     b.HasKey("IdFunc");
 
                     b.ToTable("Usuarios");
-                });
-
-            modelBuilder.Entity("PIM_SistemaDeChamados_API.Models.Tecnico", b =>
-                {
-                    b.HasOne("PIM_SistemaDeChamados_API.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("IdFunc")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
                 });
 #pragma warning restore 612, 618
         }

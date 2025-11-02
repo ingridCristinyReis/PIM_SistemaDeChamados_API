@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "PIM_SistemaDeChamados_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Dashboard\\Dashboard.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

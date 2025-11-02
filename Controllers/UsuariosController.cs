@@ -2,104 +2,75 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PIM_SistemaDeChamados_API.Data;
 using PIM_SistemaDeChamados_API.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Linq;
 
 namespace PIM_SistemaDeChamados_API.Controllers
 {
-    [Route("api/[controller]")]   // rota: api/Usuarios
+    [Route("api/[controller]")]
     [ApiController]
     public class UsuariosController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        public UsuariosController(ApplicationDbContext context) => _context = context;
 
-        public UsuariosController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
-
-        // GET: api/Usuarios
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetAll()
+            => await _context.Usuarios.AsNoTracking().ToListAsync();
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Usuario>> GetOne(int id)
         {
-            return await _context.Usuarios.ToListAsync();
+            var u = await _context.Usuarios.FindAsync(id);
+            return u is null ? NotFound() : u;
         }
 
-        // GET: api/Usuarios/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(int id)
-        {
-            var usuario = await _context.Usuarios.FindAsync(id);
-
-            if (usuario == null)
-            {
-                return NotFound();
-            }
-
-            return usuario;
-        }
-
-        // POST: api/Usuarios
         [HttpPost]
-        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
+        public async Task<ActionResult<Usuario>> Post(Usuario usuario)
         {
+            // força de senha (LGPD)
+            var ok = System.Text.RegularExpressions.Regex.IsMatch(
+                usuario.Senha ?? "",
+                @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$");
+            if (!ok) return BadRequest("A senha deve conter 8+ caracteres, com maiúscula, minúscula, número e símbolo.");
+
+            // hash
+            usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
-            // usa IdFunc como chave primária
-            return CreatedAtAction(nameof(GetUsuario), new { id = usuario.IdFunc }, usuario);
-        }
-
-        // PUT: api/Usuarios/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
-        {
-            if (id != usuario.IdFunc)
+            // log
+            _context.Logs.Add(new Log
             {
-                return BadRequest();
-            }
-
-            _context.Entry(usuario).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UsuarioExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // DELETE: api/Usuarios/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsuario(int id)
-        {
-            var usuario = await _context.Usuarios.FindAsync(id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
-
-            _context.Usuarios.Remove(usuario);
+                Usuario = usuario.NomeUsuario,
+                Acao = $"Usuário {usuario.NomeUsuario} cadastrado.",
+                DataHora = DateTime.Now
+            });
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return CreatedAtAction(nameof(GetOne), new { id = usuario.IdFunc }, usuario);
         }
 
-        private bool UsuarioExists(int id)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] Usuario input)
         {
-            return _context.Usuarios.Any(e => e.IdFunc == id);
+            if (input is null || string.IsNullOrWhiteSpace(input.NomeUsuario) || string.IsNullOrWhiteSpace(input.Senha))
+                return BadRequest("Usuário ou senha inválidos.");
+
+            var user = await _context.Usuarios.FirstOrDefaultAsync(x => x.NomeUsuario == input.NomeUsuario);
+            if (user is null || !BCrypt.Net.BCrypt.Verify(input.Senha, user.Senha))
+                return Unauthorized("Usuário ou senha incorretos.");
+
+            return Ok(new { mensagem = "Login ok", user.IdFunc, user.NomeUsuario, user.Email, user.Funcao });
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var u = await _context.Usuarios.FindAsync(id);
+            if (u is null) return NotFound();
+            _context.Usuarios.Remove(u);
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
     }
 }

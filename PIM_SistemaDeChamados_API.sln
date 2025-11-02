@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIM_SistemaDeChamados_API", "PIM_SistemaDeChamados_API.csproj", "{4B7383EC-6676-52F1-FAFC-8624EA16FE69}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1A43BBE-4F25-4FD0-BD6E-4F526C438954} = {C1A43BBE-4F25-4FD0-BD6E-4F526C438954}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "..\Dashboard\Dashboard.csproj", "{C1A43BBE-4F25-4FD0-BD6E-4F526C438954}"
 EndProject

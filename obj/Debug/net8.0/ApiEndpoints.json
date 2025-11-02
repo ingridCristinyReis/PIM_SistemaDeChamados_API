@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "PIM_SistemaDeChamados_API.Controllers.BellaController",
+    "Method": "Analisar",
+    "RelativePath": "api/Bella/analisar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "PIM_SistemaDeChamados_API.Controllers.BellaController\u002BAnaliseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PIM_SistemaDeChamados_API.Controllers.BellaController\u002BAnaliseResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PIM_SistemaDeChamados_API.Controllers.ChamadosController",
     "Method": "GetChamados",
     "RelativePath": "api/Chamados",
@@ -328,7 +354,7 @@
   },
   {
     "ContainingType": "PIM_SistemaDeChamados_API.Controllers.UsuariosController",
-    "Method": "GetUsuarios",
+    "Method": "GetAll",
     "RelativePath": "api/Usuarios",
     "HttpMethod": "GET",
     "IsController": true,
@@ -348,7 +374,7 @@
   },
   {
     "ContainingType": "PIM_SistemaDeChamados_API.Controllers.UsuariosController",
-    "Method": "PostUsuario",
+    "Method": "Post",
     "RelativePath": "api/Usuarios",
     "HttpMethod": "POST",
     "IsController": true,
@@ -374,7 +400,7 @@
   },
   {
     "ContainingType": "PIM_SistemaDeChamados_API.Controllers.UsuariosController",
-    "Method": "GetUsuario",
+    "Method": "GetOne",
     "RelativePath": "api/Usuarios/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -400,28 +426,7 @@
   },
   {
     "ContainingType": "PIM_SistemaDeChamados_API.Controllers.UsuariosController",
-    "Method": "PutUsuario",
-    "RelativePath": "api/Usuarios/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "usuario",
-        "Type": "PIM_SistemaDeChamados_API.Models.Usuario",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PIM_SistemaDeChamados_API.Controllers.UsuariosController",
-    "Method": "DeleteUsuario",
+    "Method": "Delete",
     "RelativePath": "api/Usuarios/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -430,6 +435,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIM_SistemaDeChamados_API.Controllers.UsuariosController",
+    "Method": "Login",
+    "RelativePath": "api/Usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "PIM_SistemaDeChamados_API.Models.Usuario",
         "IsRequired": true
       }
     ],
