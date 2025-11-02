@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\PIM_SistemaDeChamados_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1A43BBE-4F25-4FD0-BD6E-4F526C438954}|..\\Dashboard\\Dashboard.csproj|c:\\users\\crist\\onedrive\\documentos\\pim\\pim2025\\dashboard\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1A43BBE-4F25-4FD0-BD6E-4F526C438954}|..\\Dashboard\\Dashboard.csproj|c:\\users\\crist\\onedrive\\documentos\\pim\\pim2025\\dashboard\\views\\funcionariodashboardcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1A43BBE-4F25-4FD0-BD6E-4F526C438954}|..\\Dashboard\\Dashboard.csproj|c:\\users\\crist\\onedrive\\documentos\\pim\\pim2025\\dashboard\\views\\funcionariodashboardcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1A43BBE-4F25-4FD0-BD6E-4F526C438954}|..\\Dashboard\\Dashboard.csproj|c:\\users\\crist\\onedrive\\documentos\\pim\\pim2025\\dashboard\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\crist\\onedrive\\documentos\\pim\\pim2025\\pim_sistemadechamados_api\\models\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:models\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1A43BBE-4F25-4FD0-BD6E-4F526C438954}|..\\Dashboard\\Dashboard.csproj|c:\\users\\crist\\onedrive\\documentos\\pim\\pim2025\\dashboard\\views\\dashboardcontrol.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1A43BBE-4F25-4FD0-BD6E-4F526C438954}|..\\Dashboard\\Dashboard.csproj|c:\\users\\crist\\onedrive\\documentos\\pim\\pim2025\\dashboard\\views\\funcionariodashboardcontrol.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\Dashboard\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\MainWindow.xaml",
+              "RelativeToolTip": "..\\Dashboard\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-06T13:16:01.928Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FuncionarioDashboardControl.xaml",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "RelativeDocumentMoniker": "..\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "RelativeToolTip": "..\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-15T02:38:02.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuncionarioDashboardControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\FuncionarioDashboardControl.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Dashboard\\Views\\FuncionarioDashboardControl.xaml.cs",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\FuncionarioDashboardControl.xaml.cs",
+              "RelativeToolTip": "..\\Dashboard\\Views\\FuncionarioDashboardControl.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwEYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T21:19:18.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Chamado.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\PIM_SistemaDeChamados_API\\Models\\Chamado.cs",
+              "RelativeDocumentMoniker": "Models\\Chamado.cs",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\PIM_SistemaDeChamados_API\\Models\\Chamado.cs",
+              "RelativeToolTip": "Models\\Chamado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T21:25:58.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FuncionarioDashboardControl.xaml",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "RelativeDocumentMoniker": "..\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "RelativeToolTip": "..\\Dashboard\\Views\\FuncionarioDashboardControl.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-14T15:37:16.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\Dashboard\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\Dashboard\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:32:15.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DashboardControl.xaml",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\DashboardControl.xaml",
+              "RelativeDocumentMoniker": "..\\Dashboard\\Views\\DashboardControl.xaml",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Documentos\\PIM\\Pim2025\\Dashboard\\Views\\DashboardControl.xaml",
+              "RelativeToolTip": "..\\Dashboard\\Views\\DashboardControl.xaml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAtwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-14T15:27:59.668Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

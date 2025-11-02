@@ -1,0 +1,39 @@
+ using System.Windows;
+using System.Windows.Controls;
+
+namespace PIM_SistemaDeChamados_Desktop
+{
+    public partial class DashboardControl : UserControl
+    {
+        public DashboardControl()
+        {
+            InitializeComponent();
+        }
+
+        public void ExibirDashboardPorPerfil(string perfil) //Este é o método que você irá chamar da sua tela de login. Você passará para ele uma string com o perfil do usuário (por exemplo, "funcionario", "tecnico" ou "gerente").
+        {
+            // Esconda todos os painéis primeiro
+            // Você deve ter painéis com nomes como painelFuncionario, painelTecnico e painelGerente
+            // painelFuncionario.Visibility = Visibility.Collapsed;
+            // painelTecnico.Visibility = Visibility.Collapsed;
+            // painelGerente.Visibility = Visibility.Collapsed;
+
+            // Com base no perfil recebido, mostre o painel correto
+            switch (perfil.ToLower()) //O switch é uma estrutura de decisão. Ele verifica o valor da variável perfil e executa o código que está dentro do case correspondente.
+            {
+                case "funcionario":
+                    // painelFuncionario.Visibility = Visibility.Visible;
+                    break;
+                case "tecnico":
+                    // painelTecnico.Visibility = Visibility.Visible;
+                    break;
+                case "gerente":
+                    // painelGerente.Visibility = Visibility.Visible;
+                    break;
+                default:
+                    MessageBox.Show("Perfil de usuário inválido.");
+                    break;
+            }
+        }
+    }
+}

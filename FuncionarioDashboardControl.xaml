@@ -1,0 +1,58 @@
+ using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using Newtonsoft.Json;
+
+namespace Dashboard
+{
+    public partial class FuncionarioDashboardControl : UserControl
+    {
+        private readonly HttpClient _httpClient = new HttpClient();
+        // A URL da sua API que você encontrou no launchSettings.json
+        private const string API_BASE_URL = "http://localhost:5018/api/"; 
+
+        public FuncionarioDashboardControl()
+        {
+            InitializeComponent();
+            CarregarChamadosDoUsuario();
+        }
+
+        private async void CarregarChamadosDoUsuario()
+        {
+            try
+            {
+                // Este é um exemplo de endpoint. O seu colega deve criar um
+                // que retorne os chamados do usuário logado (ex: com base no Id do usuário)
+                string url = $"{API_BASE_URL}chamados/usuario/1"; 
+                
+                var response = await _httpClient.GetStringAsync(url);
+                var listaDeChamados = JsonConvert.DeserializeObject<List<Chamado>>(response);
+
+                // Atribui a lista de chamados ao DataGrid
+                dgMeusChamados.ItemsSource = listaDeChamados;
+            }
+            catch (HttpRequestException ex)
+            {
+                MessageBox.Show($"Ocorreu um erro ao conectar com a API. Verifique se a API está em execução. Erro: {ex.Message}", "Erro de Conexão", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocorreu um erro inesperado: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+    }
+
+    // Classe que representa um Chamado.
+    // Você deve garantir que esta classe existe no seu projeto.
+    public class Chamado
+    {
+        public int IdChamado { get; set; }
+        public string Descricao { get; set; }
+        public DateTime DataAbertura { get; set; }
+        public DateTime? DataFechamento { get; set; }
+        public string Status { get; set; }
+    }
+}
