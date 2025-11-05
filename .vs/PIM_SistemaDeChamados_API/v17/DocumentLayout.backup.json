@@ -3,67 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\models\\triagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:models\\triagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\models\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:models\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\models\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:models\\chamado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|c:\\users\\silvi\\onedrive\\\u00E1rea de trabalho\\pim_sistemadechamados_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B7383EC-6676-52F1-FAFC-8624EA16FE69}|PIM_SistemaDeChamados_API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarChamados.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarUsuarios.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarTecnicos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Dashboard.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -77,219 +36,74 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Log.cs",
-              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Log.cs",
-              "RelativeDocumentMoniker": "Models\\Log.cs",
-              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Log.cs",
-              "RelativeToolTip": "Models\\Log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T22:12:25.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Chamado.cs",
-              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Chamado.cs",
-              "RelativeDocumentMoniker": "Models\\Chamado.cs",
-              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Chamado.cs",
-              "RelativeToolTip": "Models\\Chamado.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvyIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T22:11:08.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAAtAQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T00:45:42.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAQAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-01T18:15:02.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T18:15:36.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Tecnico.cs",
-              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Tecnico.cs",
-              "RelativeDocumentMoniker": "Models\\Tecnico.cs",
-              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Tecnico.cs",
-              "RelativeToolTip": "Models\\Tecnico.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T22:12:41.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Triagem.cs",
-              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Triagem.cs",
-              "RelativeDocumentMoniker": "Models\\Triagem.cs",
-              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Triagem.cs",
-              "RelativeToolTip": "Models\\Triagem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T22:12:59.857Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
               "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBIAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T22:13:17.811Z"
+              "WhenOpened": "2025-11-05T01:29:57.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CadastroUsuario.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml.cs",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAswGoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T18:22:59.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ApiClient.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwC8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T22:08:28.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CadastroUsuario.xaml",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\CadastroUsuario.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-01T18:22:58.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-01T17:23:05.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GerenciarChamados.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarChamados.xaml.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarChamados.xaml.cs",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarChamados.xaml.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarChamados.xaml.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAewKsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T18:25:00.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Login.xaml.cs",
               "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml.cs",
               "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml.cs",
               "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\Login.xaml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAA5wEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T17:22:47.651Z"
+              "WhenOpened": "2025-11-03T02:59:48.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GerenciarUsuarios.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarUsuarios.xaml.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarUsuarios.xaml.cs",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarUsuarios.xaml.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarUsuarios.xaml.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAgwG0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Models\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Models\\LoginDto.cs",
+              "RelativeToolTip": "Models\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T22:49:06.127Z"
+              "WhenOpened": "2025-11-03T02:58:12.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GerenciarTecnicos.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarTecnicos.xaml.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarTecnicos.xaml.cs",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarTecnicos.xaml.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Views\\GerenciarTecnicos.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAADwv04AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T02:25:31.4Z"
+              "WhenOpened": "2025-11-03T02:34:50.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\silvi\\OneDrive\\\u00C1rea de Trabalho\\PIM_SistemaDeChamados_API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T18:15:14.925Z"
+              "WhenOpened": "2025-11-03T02:32:20.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Dashboard.csproj",
-              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Dashboard.csproj",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Dashboard.csproj",
-              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Dashboard.csproj",
-              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Dashboard.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-01T17:34:03.751Z"
+              "DocumentIndex": 2,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\crist\\OneDrive\\Desktop\\Pim2025\\Dashboard\\Services\\ApiClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T02:28:07.558Z"
             }
           ]
         }

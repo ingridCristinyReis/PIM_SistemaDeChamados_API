@@ -12,7 +12,7 @@ using PIM_SistemaDeChamados_API.Data;
 namespace PIM_SistemaDeChamados_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251102235152_InitialCreate")]
+    [Migration("20251105013507_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PIM_SistemaDeChamados_API.Data;
@@ -51,16 +52,63 @@ namespace PIM_SistemaDeChamados_API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] Usuario input)
+        public async Task<IActionResult> Login([FromBody] LoginDto model)
         {
-            if (input is null || string.IsNullOrWhiteSpace(input.NomeUsuario) || string.IsNullOrWhiteSpace(input.Senha))
-                return BadRequest("Usuário ou senha inválidos.");
+            if (model is null || string.IsNullOrWhiteSpace(model.Email) || string.IsNullOrWhiteSpace(model.Senha))
+                return BadRequest(new { message = "Email ou senha inválidos." });
 
-            var user = await _context.Usuarios.FirstOrDefaultAsync(x => x.NomeUsuario == input.NomeUsuario);
-            if (user is null || !BCrypt.Net.BCrypt.Verify(input.Senha, user.Senha))
-                return Unauthorized("Usuário ou senha incorretos.");
+            // 🔹 Agora busca pelo EMAIL
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == model.Email);
+            if (user is null)
+                return Unauthorized(new { message = "Email ou senha incorretos." });
 
-            return Ok(new { mensagem = "Login ok", user.IdFunc, user.NomeUsuario, user.Email, user.Funcao });
+            var senhaDb = user.Senha ?? string.Empty;
+
+            // 🔐 bcrypt (caso tenha senhas criptografadas)
+            if (senhaDb.StartsWith("$2a$") || senhaDb.StartsWith("$2b$") || senhaDb.StartsWith("$2y$"))
+            {
+                if (BCrypt.Net.BCrypt.Verify(model.Senha, senhaDb))
+                    return Ok(new
+                    {
+                        message = "Login OK (bcrypt)",
+                        user.IdFunc,
+                        user.NomeUsuario,
+                        user.Email,
+                        user.Funcao
+                    });
+
+                return Unauthorized(new { message = "Email ou senha incorretos." });
+            }
+
+            // 🔑 Identity (PasswordHasher)
+            try
+            {
+                var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<Usuario>();
+                var res = hasher.VerifyHashedPassword(user, senhaDb, model.Senha);
+                if (res != Microsoft.AspNetCore.Identity.PasswordVerificationResult.Failed)
+                    return Ok(new
+                    {
+                        message = "Login OK (PasswordHasher)",
+                        user.IdFunc,
+                        user.NomeUsuario,
+                        user.Email,
+                        user.Funcao
+                    });
+            }
+            catch { }
+
+            // 🧩 Fallback: texto puro (para registros antigos sem hash)
+            if (senhaDb == model.Senha)
+                return Ok(new
+                {
+                    message = "Login OK (plaintext)",
+                    user.IdFunc,
+                    user.NomeUsuario,
+                    user.Email,
+                    user.Funcao
+                });
+
+            return Unauthorized(new { message = "Email ou senha incorretos." });
         }
 
         [HttpDelete("{id:int}")]

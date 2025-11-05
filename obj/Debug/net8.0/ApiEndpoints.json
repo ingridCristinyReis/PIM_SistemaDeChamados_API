@@ -449,8 +449,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "input",
-        "Type": "PIM_SistemaDeChamados_API.Models.Usuario",
+        "Name": "model",
+        "Type": "PIM_SistemaDeChamados_API.Models.LoginDto",
         "IsRequired": true
       }
     ],

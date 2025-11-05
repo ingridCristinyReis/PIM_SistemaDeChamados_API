@@ -1,28 +1,37 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PIM_SistemaDeChamados_API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Controllers e Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Banco de Dados (Azure + Localhost:5018)
 builder.Services.AddDbContext<ApplicationDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddCors(opt =>
+// ✅ CORS liberado para qualquer origem (WPF precisa disso)
+builder.Services.AddCors(options =>
 {
-    opt.AddDefaultPolicy(p =>
-        p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+    options.AddPolicy("DevAll", policy =>
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod());
 });
 
 var app = builder.Build();
 
+// Swagger
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.UseHttpsRedirection();
-app.UseCors();
+// ✅ Usa HTTP e ativa CORS
+app.UseCors("DevAll");
+app.UseRouting();
+app.UseAuthorization();
 app.MapControllers();
 
-app.Run();
+// (Evita erro: "Failed to determine the http port for redirect")
+app.Run("http://localhost:5018");
